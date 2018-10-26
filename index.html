@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Competition on Online Data-Driven Multi-Objective Optimization</title>
+</head>
+
+<body>
+<img src="http://www.memecs.org/mcw/images/head19.PNG"></img>
+<h1 align="center">Competition on Online Data-Driven Multi-Objective Optimization</h1>
+<h3 align="center">at 2019 IEEE Congress on Evolutionary Computation</h2>
+<h5 align="center">Jun 10-13, 2019, Wellington, New Zealand</h3>
+
+<p>Evolutionary multi-objective optimization (EMO) has been flourishing for two decades in academia. However, the industry applications of EMO to real-world optimization problems are infrequent, due to the strong assumption that objective function evaluations are easily accessed. In fact, such objective functions may not exist, instead computationally expensive numerical simulations or costly physical experiments must be performed for evaluations. Such problems driven by data collected in simulations or experiments are formulated as data-driven optimization problems, which pose challenges to conventional EMO algorithms. Firstly, obtaining the minimum data for conventional EMO algorithms to converge requires a high computational or resource cost. Secondly, although surrogate models that approximate objective functions can be used to replace the real function evaluations, the search accuracy cannot be guaranteed because of the approximation errors of surrogate models. Thirdly, since only a small amount of online data is allowed to be sampled during the optimization process, the management of online data significantly affects the performance of algorithms. The research on data-driven evolutionary optimization has not received sufficient attention, although techniques for solving such problems are highly in demand. One main reason is the lack of benchmark problems that can closely reflect real-world challenges, which leads to a big gap between academia and industries.</p>
+
+<p>In this competition, we carefully select 7 benchmark multi-objective optimization problems from real-world applications, including design of car cab, optimization of vehicle frontal structure, filter design, optimization of power systems, and optimization of neural networks. The objective functions of those problems cannot be calculated analytically, but can be calculated by calling an executable program to provide true black-box evaluations for both offline and online data sampling. A set of initial data is generated offline using Latin hypercube sampling, and a predefined fixed number of online data samples are set as the stopping criterion. This competition, as an event organized by the Task Force on ¡°Intelligence Systems for Health¡± in the Intelligent Systems Application Technical Committee and Task Force on ¡°Data-Driven Evolutionary Optimization of Expensive Problems¡± in the Evolutionary Computation Technical Committee, aims to promote the research on data-driven evolutionary multi-objective optimization by suggesting a set of benchmark problems extracted from various real-world optimization applications. All benchmark functions are implemented in MATLAB code. Also, the MATLAB code has been embedded in a recently developed software platform ¨C PlatEMO, an open source MATLAB-based platform for evolutionary multi- and many-objective optimization, which currently includes more than 50 representative algorithms and over 100 benchmark functions, along with a variety of widely used performance indicators. </p>
+
+<p><b>Test Problems</b>:<br>
+<b>DDMOP1</b>: This problem is a vehicle performance optimization problem, termed car cab design, which has 11 decision variables and 9 objectives.<br>
+The decision variables include the dimensions of the car body and bounds on nature frequencies, e.g., thickness of B-Pillar inner, thickness of floor side inner, thickness of door beam, and barrier height. Meanwhile, the nine objectives characterize the performance of the car cab, e.g., weight of the car, fuel economy, acceleration time, road noise at different speed, and roominess of the car.<br>
+<b>DDMOP2</b>: This problem aims at structural optimization of the frontal structure of vehicles for crash-worthiness, which involves 5 decision variables and 3 objectives. The decision variables include the thickness of five reinforced members around the frontal structure. Meanwhile, the mass of vehicle, deceleration during the full-frontal crash (which is proportional to biomechanical injuries caused to the occupants), and toe board intrusion in the offset-frontal crash (which accounts for the structural integrity of the vehicle) are taken as objectives, which are to be minimized.<br>
+<b>DDMOP3</b>: This problem is an LTLCL switching ripple suppressor with two resonant branches, which includes 6 decision variables and 3 objectives. This switching ripple suppressor is able to achieve zero impedance at two different frequencies. The decision variables are the design parameters of the electronic components, e.g., capacitors, inductors, and resistors. Meanwhile, the objectives of this problem involve the total cost of the inductors (which is proportional to the consume of the copper and economic cost) and the harmonics attenuations at two different resonant frequencies (which are related to the performance of the designed switching ripple suppressor).<br>
+<b>DDMOP4</b>: This problem is also an LTLCL switching ripple suppressor but with nine resonant branches, which includes 13 decision variables and 10 objectives. This switching ripple suppressor is able to achieve zero impedance at nine different frequencies. The decision variables are the design parameters of the electronic components, e.g., capacitors, inductors, and resistors. Meanwhile, the objectives of this problem involve the total cost of the inductors and the harmonics attenuations at nine different resonant frequencies.<br>
+<b>DDMOP5</b>: This problem is a reactive power optimization problem with 14 buses, termed RPOPS, which involves 15 decision variables and 5 objectives. The decision variables include the dimensions of the system conditions, e.g., active power of the generators, initial values of the voltage, and per-unit values of the parallel capacitor and susceptance. Meanwhile, the five objectives characterize the performance of the power system, e.g., active power loss, voltage deviation, reciprocal of the voltage stability margin, generation cost, and emission of the power system.<br>
+<b>DDMOP6</b>: This problem is a portfolio optimization problem, which has 10 decision variables and 2 objectives. The data consists of 10 assets with the closing prices in 100 minutes. Each decision variable indicates the investment proportion on an asset. The first objective denotes the overall return, and the second objective denotes the financial risk according to the modern portfolio theory.<br>
+<b>DDMOP7</b>: This problem is a neural network training problem, which has 17 decision variables and 2 objectives. The training data consists of 690 samples with 14 features and 2 classes. Each decision variable indicates a weight of the neural network with a size of 14*1*1.  The first objective denotes the complexity of the network (i.e., ratio of nonzero weights), and the second objective denotes the classification error rate of the neural network.</p>
+
+<p><b>Download links</b>: <a href="https://github.com/HandingWang/DDMOP">https://github.com/HandingWang/DDMOP</a></p>
+
+<p><b>Important Dates</b>:<br>
+For participants planning to submit a paper to the 2019 IEEE Congress on Evolutionary Computation:<br>
+Paper submission: <b><font color="red">7th January, 2019</font></b><br>
+Notification to authors: 7th March, 2019<br>
+Final submission: 31st March, 2019<br>
+
+<p><b>Note</b>: You are encouraged to submit your paper to the Special Session on Data-Driven Optimization of Computationally Expensive Problems<br>
+For other participants (<b>only result entry but without a paper</b>):
+<b>Results submission deadline: <font color="red">30th April 2019</font></b></p>
+
+<p><b>Note</b>: Please send your results directly to Dr Handing Wang (<a href="mailto:wanghanding.patch@gmail.com">wanghanding.patch@gmail.com</a>) or Dr Cheng He (<a href="mailto:chenghehust@gmail.com">chenghehust@gmail.com</a>)</p>
+
+<p><b>Organizers:</b>:<br>
+Handing Wang, School of Artificial Intelligence, Xidian University, China<br>
+Cheng He, Department of Computer Science and Engineering, Southern University of Science and Technology, China<br>
+Ye Tian, Computer Science and Technology School, Anhui University<br>
+Yaochu Jin, Department of Computer Science, University of Surrey, UK<br>
+</p>
+
+</body>
+</html>
